@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my travel</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main_screen.css">
+    <link rel="stylesheet" href="./css/mission.css">
+    <link rel="stylesheet" href="./css/feedback.css">
+    <link rel="stylesheet" href="./css/tour_form.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+</head>
+
+<body>
+    <div id="app" data-scroll-container>
+
+        <section class="main-screen" data-scroll-section>
+
+            <div class="main-screen-content">
+                <div class="header">
+                    <div class="logo">
+                        <a href="./index.html">my travel</a>
+                    </div>
+
+                    <div class="menu">
+                        <a href="#" class="button-menu">menu</a>
+                    </div>
+                </div>
+
+                <h1>YOUR NEXT JOURNEY</h1>
+
+                <div class="arrow-link" data-scroll data-scroll-direction="vertical" data-scroll-speed="-3"
+                    data-scroll-class="appear" data-scroll-repeat="true">
+                    <a href="#mission">is here
+                        <img src="./img/icons/icon_arrow_down_white.svg" alt="icon_arrow_down_white"></a>
+                </div>
+            </div>
+
+
+
+            <video autoplay muted loop id="myVideo" class="video-bckg">
+                <source src="./img/bckg.MP4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </section>
+
+
+        <section class="mission" id="mission" data-scroll-section>
+            <div class="all-missions">
+                <mission-info v-for="mission in missions" :key="mission.id" :title="mission.title"
+                    :description="mission.description">
+                </mission-info>
+            </div>
+
+
+            <div class="mission-img-container">
+                <mission-image v-for="photo in photos" :key="photo.id" :url="photo.url"></mission-image>
+            </div>
+        </section>
+
+        <section class="feedback" data-scroll-section>
+            <h2 class="feedback-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3"
+                data-scroll-class="appear" data-scroll-repeat="true">CHECK OUR TRAVELERS FEEDBACK</h2>
+
+            <div class="all-feedback">
+                <feedback-item v-for="comment in comments" :key="comment.id" :name="comment.name"
+                    :country="comment.country" :text="comment.text"></feedback-item>
+            </div>
+
+            <p class="feedback-description">we strive to provide the best customer experience and would love to hear
+                your feedback. please let us know what you liked, what we could do better, and how you would rate your
+                overall experience. your opinion matters to us, and we appreciate your taking the time to help make our
+                travel services even better!</p>
+
+            <div class="arrow-link__feedback">
+                <a href="#form">the feedback is <br> great, but I want to
+                    <img src="./img/icons/icon_arrow_down_white.svg" alt="icon_arrow_down_white"></a>
+            </div>
+        </section>
+
+        <section class="tour-form" id="form" data-scroll-section>
+            <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear"
+                data-scroll-repeat="true">
+                <h2 class="tour-form__title">TAKE A JOURNEY TOO</h2>
+
+                <form action="">
+                    <label for="from">from</label>
+                    <input type="text" name="from" id="from">
+
+                    <label for="country">country</label>
+                    <input type="text" name="country" id="country">
+
+                    <label for="start">start</label>
+                    <input type="date" name="start" id="start">
+
+                    <label for="nights">nights</label>
+                    <input type="number" name="nights" id="nights">
+
+                    <label for="persons">persons</label>
+                    <input type="number" name="persons" id="persons">
+
+                    <label for="hotel">hotel</label>
+                    <input type="text" name="hotel" id="hotel">
+                </form>
+
+                <div class="arrow-right">
+                    <a href="#">search
+                        <img src="./img/icons/icon_arrow_right_black.svg" alt="icon_arrow_right_black">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="blog" data-scroll-section>
+            <div class="blog-intro" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3"
+                data-scroll-class="appear" data-scroll-repeat="true">
+                <h2 class="blog-title">WHAT’S NEXT?</h2>
+
+                <p class="blog-description">
+                    visit our blog and learn about new travel destinations, tips for planning a trip, and exciting
+                    deals. get insider access to our best tips and tricks for having a successful journey. join us in
+                    exploring the world!
+                </p>
+
+                <div class="arrow-link__blog">
+                    <a href="#posts">show me
+                        <img src="./img/icons/icon_arrow_down_white.svg" alt="icon_arrow_down_white">
+                    </a>
+                </div>
+            </div>
+
+            <div class="all-posts" id="posts" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3"
+                data-scroll-class="appear" data-scroll-repeat="true">
+                <blog-item v-for="post in posts" :key="post.id" :photo="post.photo" :title="post.title"
+                    :text="post.text"></blog-item>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts" data-scroll-section>
+            <h2 class="contacts-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3"
+            data-scroll-class="appear" data-scroll-repeat="true">CONTACT US FOR MORE INFORMATION</h2>
+            <div class="contact-info">
+                <p>1234 Marble Avenue, Los Angeles CA 10001</p>
+                <a href="tel:0123456789">
+                    <p>tel: + 0 123 456 789</p>
+                </a>
+                <a href="mailto:mytravel1234@email.email">
+                    <p>email: mytravel1234@email.email</p>
+                </a>
+            </div>
+            <div class="contact-copyright">
+                <p>
+                    design: @gala__coding
+                    <br>
+                    photos: unsplash
+                    <br>
+                    video: pexel
+                    <br>
+                    © copyright all rights reserved, 2023
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <!-- templates -->
+    <!-- mission -->
+    <script type="text/x-template" id="mission-images-template">
+        <img :src="url" alt="landscape" class="mission-img" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">
+    </script>
+
+    <script type="text/x-template" id="mission-info-template">
+        <div class="mission-info-item" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">
+            <h2 class="mission-title">{{title}}</h2>
+            <p class="mission-description">{{description}}</p>            
+        </div>
+    </script>
+
+
+    <!-- feedback -->
+    <script type="text/x-template" id="feedback-items-template">
+        <div class="feedback-box" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">
+            <div class="feedback-box__name">
+                <img src="./img/icons/icon_airplane.svg" alt="icon_airplane">
+                <h3>{{name}}, {{country}}</h3>
+            </div>
+            <div class="feedback-box__text">{{text}}</div>
+        </div>
+    </script>
+
+
+    <!-- blog -->
+    <script type="text/x-template" id="blog-items-template">
+        <div class="blog-item-container">
+            <img :src="photo" alt="blog_photo" class="blog-photo">
+            <div class="blog-preview">
+                <h2 class="blog-title">{{title}}</h2>
+                <p class="blog-text">{{text}}</p>
+
+                <div class="arrow-link-right">
+                    <a href="#">
+                        read more
+                        <img src="./img/icons/icon_arrow_right_white.svg" alt="icon_arrow_right_white">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </script>
+
+
+
+    <!-- other scripts -->
+    <script src="https://unpkg.com/vue@2"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/scrollreveal.js"></script>
+    <script src="./js/parallax.js"></script>
+</body>
+
+</html>

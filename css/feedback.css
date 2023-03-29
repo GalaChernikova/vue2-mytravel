@@ -1,0 +1,74 @@
+.feedback-title {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto 75px;
+}
+
+.feedback-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 1600px;
+    width: 100%;
+    margin: 130px auto 215px;
+}
+
+.arrow-link__feedback {
+    position: static;
+    margin: 0 auto 215px;
+    max-width: 400px;
+    width: 100%;
+
+}
+
+.arrow-link__feedback a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #EBEBEB;
+}
+
+.all-feedback {
+    display: flex;
+    gap: 80px;
+
+    overflow-x: visible;
+}
+
+.feedback-box {
+    background: url('./../img/bckg_gradient.png') no-repeat;
+    background-size: cover;
+    color: #020203;
+    padding: 40px;
+
+    max-width: 600px;
+    width: 100%;
+}
+
+.feedback-box__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.feedback-box__name h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.feedback-box__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: justify;
+    text-transform: lowercase;
+}

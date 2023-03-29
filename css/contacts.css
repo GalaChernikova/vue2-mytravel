@@ -1,0 +1,21 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto 200px;
+}
+
+.contacts p,
+.contacts a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #EBEBEB;
+}
+
+.contact-copyright {
+    margin: 100px 0;
+}
