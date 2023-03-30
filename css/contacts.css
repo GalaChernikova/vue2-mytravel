@@ -2,17 +2,19 @@
     display: flex;
     flex-direction: column;
 
-    max-width: 1600px;
-    width: 100%;
     margin: 0 auto 200px;
+
+    background: url('./../img/beach.png') no-repeat;
+    background-size: 40%;
+    background-position: 60%;
 }
 
 .contacts p,
 .contacts a {
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 36px;
     color: #EBEBEB;
 }
 

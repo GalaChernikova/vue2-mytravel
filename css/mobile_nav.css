@@ -1,0 +1,67 @@
+.mobile-nav__button {
+    display: none;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .mobile-nav {
+    position: absolute;
+  
+    padding-bottom: 200px;
+    background: #020203;
+    flex-direction: column;
+    top: -45px;
+    right: 0;
+
+    max-width: 755px;
+    width: 100%;
+    margin-top: 45px;
+    
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+  }
+  
+  .active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.7s ease;
+   
+  }
+  .mobile-nav__button{
+    cursor: pointer;
+  }
+  
+  .mobile-nav__button--close {
+    border: none;
+    background: transparent;
+    max-width: 27px;
+    padding: 20px 40px;
+    margin: 30px 50px 30px auto;
+    cursor: pointer;
+  }
+  .mobile-nav__button--close img {
+    width: unset;
+  }
+  
+  .nav-links__mob {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  
+  
+  }
+  
+  .nav-links.nav-links__mob li{
+  align-self: flex-start;
+  }
+  
+  .nav-links.nav-links__mob li,
+  .nav-links.nav-links__mob li a{
+    padding: 20px 0;
+    text-align: start;
+    color: #EBEBEB;
+  }

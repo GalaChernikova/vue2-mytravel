@@ -1,0 +1,435 @@
+/* .main-screen,
+.mission,
+.feedback,
+.tour-form,
+.blog,
+.contacts {
+    display: none;
+} */
+
+
+/* 1700px */
+@media (max-width: 1700px) {
+    h1 {
+        font-size: 120px;
+        line-height: 100%;
+        max-width: 1250px;
+    }
+
+    .header {
+        max-width: 1250px;
+    }
+
+    .mission-info-item:first-child {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    .all-missions {
+        max-width: 1200px;
+    }
+
+    .all-feedback{
+        flex-direction: column;
+    }
+
+    .feedback-description {
+        max-width: 1400px;
+    }
+}
+
+
+/* 1500px */
+@media (max-width: 1500px) {
+    h1 {
+        margin: 200px auto;
+    }
+
+    .feedback-title,
+    .feedback-description,
+    .feedback-box {
+        max-width: 1000px;
+    }
+
+    .all-feedback {
+        margin: 0 auto;
+    }
+
+}
+
+/* 1300px */
+@media (max-width: 1300px) {
+    h1 {
+        margin: 200px auto;
+        font-size: 100px;
+        max-width: 1050px;
+        margin: 150px auto;
+    }
+
+    .header {
+        max-width: 1050px;
+    }
+
+    .mission-info-item:first-child {
+        max-width: 1000px
+    }
+
+    .mission-img-container {
+        margin-top: 300px;
+    }
+
+    .mission-img {
+        max-width: 400px;
+    }
+}
+
+
+/* 1200px */
+@media (max-width: 1200px) {
+    h1 {
+        margin: 200px auto;
+        font-size: 100px;
+        max-width: 1050px;
+        margin: 120px auto;
+    }
+
+    .header {
+        max-width: 1050px;
+    }
+
+    .header a,
+    .arrow-link a,
+    .nav-links.nav-links__mob li a,
+    .arrow-link__feedback a,
+    .arrow-right a,
+    .arrow-link__blog a {
+        font-size: 30px;
+        line-height: 100%;
+    }
+}
+
+
+
+/* 1100px */
+@media (max-width: 1100px) {
+    h1 {
+        font-size: 80px;
+        margin: 100px auto;
+        max-width: 835px;
+    }
+
+    .header {
+        max-width: 835px;
+    }
+
+    .mission-info-item:first-child {
+        max-width: 1000px;
+        flex-direction: column;
+        gap: unset;
+    }
+}
+
+
+
+/* 1000px */
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 60px;
+        margin: 85px auto 130px;
+        max-width: 625px;
+    }
+
+    .header {
+        max-width: 625px;
+    }
+
+
+    .header a,
+    .arrow-link a,
+    .nav-links.nav-links__mob li a,
+    .arrow-link__feedback a,
+    .arrow-right a,
+    .arrow-link__blog a {
+        font-size: 20px;
+    }
+
+    .arrow-link
+
+    /* .mobile-nav__button--close,
+    .arrow-link__feedback,
+    .arrow-right,
+    .arrow-link__blog { */
+        {
+        max-width: 100px;
+    }
+
+
+    .arrow-link img,
+    .mobile-nav__button--close img,
+    .arrow-link__feedback img,
+    .arrow-right img,
+    .arrow-link__blog img {
+        max-width: 20px;
+    }
+
+    .mobile-nav__button--close {
+        margin: 20px 50px 20px auto;
+    }
+
+    .nav-links.nav-links__mob li,
+    .nav-links.nav-links__mob li a {
+        padding: 10px 0;
+    }
+
+    .mobile-nav {
+        max-width: 500px;
+    }
+
+    .feedback-title,
+    .feedback-description,
+    .feedback-box {
+        max-width: 800px;
+    }
+}
+
+
+
+/* 900px */
+@media (max-width: 900px) {
+    .header {
+        padding: 30px 0;
+    }
+
+    .all-feedback {
+        overflow: unset;
+    }
+
+    .feedback-title,
+    .feedback-description {
+        max-width: 680px;
+    }
+
+    .arrow-link__feedback {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .feedback-box {
+        max-width: 720px;
+    }
+}
+
+
+/* 800px */
+@media (max-width: 800px) {
+    .header {
+        padding: 20px 0;
+    }
+
+    h1 {
+        margin: 85px auto;
+    }
+
+    h2 {
+        font-size: 50px;
+        line-height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .mission-title {
+        max-width: 500px;
+    }
+
+    .mission-description {
+        font-size: 30px;
+        line-height: 100%;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .mission-info-item {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .mission-info-item:first-child {
+        max-width: 500px;
+        left: 30px;
+    }
+
+
+    .mission-img-container {
+        margin-top: 200px;
+        gap: 30px;
+    }
+}
+
+
+/* 700px */
+@media (max-width: 700px) {
+    .header {
+        max-width: 525px;
+
+    }
+
+    h1 {
+        font-size: 50px;
+        margin: 60px auto;
+        max-width: 525px;
+    }
+
+    .feedback-title,
+    .feedback-description,
+    .feedback-box {
+        max-width: 500px;
+    }
+}
+
+
+
+/* 600px */
+@media (max-width: 600px) {
+    .header {
+        max-width: 420px;
+
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 50px auto;
+        max-width: 420px;
+    }
+
+    .mission-img {
+        max-width: 200px;
+        margin: 0 !important;
+    }
+
+    .mission-img-container {
+        margin-bottom: 50px;
+    }
+
+    .mission-info-item:first-child,
+    .mission-info-item {
+        max-width: 450px;
+    }
+
+    .mission-info-item:first-child {
+        position: static;
+    }
+
+}
+
+
+
+/* 500px */
+@media (max-width: 500px) {
+
+    .header {
+        padding: 0;
+    }
+
+
+    h1 {
+        font-size: 40px;
+        margin: 50px auto;
+        max-width: 420px;
+    }
+
+    .header a,
+    .arrow-link a,
+    .nav-links.nav-links__mob li a,
+    .arrow-link__feedback a,
+    .arrow-right a,
+    .arrow-link__blog a {
+        font-size: 14px;
+    }
+
+    .nav-links.nav-links__mob li {
+        padding: 0;
+    }
+
+    .mission-info-item:first-child,
+    .mission-info-item {
+        max-width: 400px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .mission-description {
+        font-size: 20px;
+    }
+
+    .all-missions {
+        gap: 50px;
+    }
+
+    .feedback-title,
+    .feedback-description,
+    .feedback-box {
+        max-width: 400px;
+    }
+
+    .feedback-box {
+        padding: 20px;
+    }
+
+    .feedback-box__name h3 {
+        font-size: 30px;
+        line-height: 100%;
+    }
+
+    .feedback-description,
+    .feedback-box__text {
+        font-size: 20px;
+        line-height: 100%;
+    }
+}
+
+
+
+/* 450px */
+@media (max-width: 450px) {
+    h1 {
+        font-size: 30px;
+        margin: 30px auto;
+        max-width: 315px;
+    }
+
+    .header {
+        max-width: 315px;
+    }
+
+    .mobile-nav__button--close {
+        margin: 0 0 0 auto;
+    }
+
+    .mission-info-item:first-child,
+    .mission-info-item {
+        max-width: 350px;
+    }
+}
+
+
+
+/* 400px */
+@media (max-width: 400px) {
+    h1 {
+        margin: 20px auto;
+        font-size: 27px;
+        max-width: 290px;
+    }
+
+    .header {
+        max-width: 290px;
+    }
+
+    .mission-info-item:first-child,
+    .mission-info-item {
+        max-width: 280px;
+    }
+}

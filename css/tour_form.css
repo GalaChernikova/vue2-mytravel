@@ -1,18 +1,10 @@
 .tour-form {
-    background: url(./../img/bckg_gradient.png) no-repeat;
-    padding: 95px 0 130px;
-    margin-bottom: 130px;
+    background: url(./../img/sand.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: 75%;
 }
 
 .tour-form__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 97px;
-    text-align: center;
-
-    color: #020203;
-
     margin-bottom: 200px;
 }
 
@@ -23,7 +15,6 @@ form {
     justify-content: space-between;
     gap: 150px 20px;
 
-    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
 }
@@ -31,10 +22,9 @@ form {
 label {
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 30px;
+    line-height: 36px;
 
-    color: #020203;
     max-width: 155px;
     width: 100%;
 }
@@ -43,34 +33,33 @@ input {
     max-width: 275px;
     width: 100%;
     background: transparent;
-    border: 2px solid #020203;
+    border: 2px solid #EBEBEB;
     padding: 20px;
     outline: none;
-    font-size: 50px;
-    line-height: 61px;
-
+    font-size: 30px;
+    line-height: 36px;
+    color: #EBEBEB;
 }
 
 .arrow-right {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
 
-    max-width: 210px;
+    max-width: 150px;
     width: 100%;
     margin: 200px auto 0;
 }
 
 .arrow-right a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 30px;
+    line-height: 36px;
     text-align: justify;
 
-    color: #020203;
+    color: #EBEBEB;
 }
 
-#date::placeholder {
-    color: transparent;
-}

@@ -1,95 +1,46 @@
-.blog{
-    margin-bottom: 600px;
-}
-
 .blog-intro {
     display: flex;
     flex-direction: column;
-
-    max-width: 1600px;
-    width: 100%;
-    margin: 0 auto 100px;
 }
 
 .blog-description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
     margin-bottom: 115px;
 }
 
-.arrow-link__blog {
-    max-width: 230px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.arrow-link__blog a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-    color: #EBEBEB;
-}
 
 .all-posts {
-    overflow-x: visible;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 50px;
 }
 
 .blog-item-container {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 
-    max-width: 1300px;
     width: 100%;
 }
 
-.blog-item-container:first-child{
-    margin-bottom: 400px;
-}
 
-.blog-item-container:nth-child(2){
-    margin-top: 200px;
-    margin-bottom: 200px;
-}
-
-.blog-item-container:nth-child(3){
-    margin-top: 600px;
-}
 
 .blog-photo {
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
-    align-self: baseline;
 }
 
 .blog-title {
+    max-width: 700px;
     margin-bottom: 30px;
 }
 
 .blog-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-
     max-width: 700px;
     width: 100%;
     margin-bottom: 50px;
 }
 
 .arrow-link-right {
-    max-width: 230px;
+    max-width: 200px;
     width: 100%;
     
 }
@@ -100,7 +51,7 @@
     justify-content: space-between;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 36px;
     color: #EBEBEB;
 }

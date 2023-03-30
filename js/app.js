@@ -1,12 +1,4 @@
 //mission
-Vue.component("mission-image", {
-  template: "#mission-images-template",
-  props: {
-    id: Number,
-    url: String,
-  },
-});
-
 Vue.component("mission-info", {
   template: "#mission-info-template",
   props: {
@@ -42,12 +34,6 @@ Vue.component("blog-item", {
 new Vue({
   el: "#app",
   data: {
-    photos: [
-      { id: 1, url: "./img/01/01_sky.png" },
-      { id: 2, url: "./img/01/01_mountain.png" },
-      { id: 3, url: "./img/01/01_sand.png" },
-      { id: 4, url: "./img/01/01_beach.png" },
-    ],
     missions: [
       {
         id: 1,
@@ -103,19 +89,19 @@ new Vue({
     posts: [
       {
         id: 1,
-        photo: "./img/02/02_packing.png",
+        photo: "./img/packing.png",
         title: "PACKING TIPS",
         text: "If you're getting ready to embark on a new journey, you may be wondering what type of luggage will best suit your needs. With so many choices and sizes, it can be hard to know what to look for. The good news is that there are some great travel recommendations for different types of travelers.",
       },
       {
         id: 2,
-        photo: "./img/02/02_beach.png",
+        photo: "./img/best_beaches.png",
         title: "BEST BEACHES",
         text: "Sunsets and sandy beaches - what could be better? Whether you’re looking for a quiet slice of paradise or an adventure-filled destination, let’s explore some of the best beaches around the world!",
       },
       {
         id: 3,
-        photo: "./img/02/02_nature.png",
+        photo: "./img/nature.png",
         title: "EXPLORING NATURE’S WONDERS",
         text: "Take a journey through magnificent forests and breathtaking nature, and experience the power of the outdoors with this incredible woodlands getaway.",
       },
